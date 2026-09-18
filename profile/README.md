@@ -1,2 +1,44 @@
 # Welcome
 
+Here, you'll find plenty of interesting things to customize your experience with the amazing game [Valheim](https://www.valheimgame.com/).
+
+Visit the [Valheim Landoria Gaming YouTube channel](https://www.youtube.com/@ValheimLandoriaGaming/videos) for mod demos and Valheim videos.
+
+Browse [Landoria's mods on Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/).
+
+## Mods
+
+First, you'll find mods to customize your Valheim experience. Explore their repositories below:
+
+### Client-only mods
+
+| Mod | Description | Demo | Thunderstore |
+| --- | --- | --- | --- |
+| [FirstPerson](https://github.com/landoria-gaming/Landoria.FirstPerson) | Adds a smooth first-person view with an adjustable field of view. | [YouTube](https://youtu.be/eExAEyoNsSs) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/FirstPerson/) |
+| [FreeFly](https://github.com/landoria-gaming/Landoria.FreeFly) | Adds a free camera for exploring, taking screenshots, and filming without admin permissions. | [YouTube](https://youtu.be/smoOkcAPKr0) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/FreeFly/) |
+| [GentleDeath](https://github.com/landoria-gaming/Landoria.GentleDeath) | Keeps equipable items after death and moves other items to your tombstone. | [YouTube](https://youtu.be/O61d6w3ZpVs) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/GentleDeath/) |
+| [HuginnCam](https://github.com/landoria-gaming/Landoria.HuginnCam) | Records gameplay from an independent cinematic camera. | — | — |
+| [QuickLaunch](https://github.com/landoria-gaming/Landoria.QuickLaunch) | Automatically resumes your last local world or multiplayer session. | [YouTube](https://youtu.be/K0r75KNOGc0) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/QuickLaunch/) |
+
+### Client and server mods
+
+| Mod | Description | Demo | Thunderstore |
+| --- | --- | --- | --- |
+| [CharacterVault](https://github.com/landoria-gaming/Landoria.CharacterVault) | Stores trusted character saves on the server to prevent item imports and duplication. | [YouTube](https://youtu.be/x2C1DdU_78c) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/CharacterVault/) |
+| [HammerFreedom](https://github.com/landoria-gaming/Landoria.HammerFreedom) | Adds server-authorized flight, unlimited stamina, fall protection, and lasting equipment in Hammer worlds. | [YouTube](https://youtu.be/wUBgHzN5hG8) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/HammerFreedom/) |
+| [Moderator](https://github.com/landoria-gaming/Landoria.Moderator) | Gives trusted moderators server-authorized tools to help players and manage the world. | [YouTube](https://youtu.be/GxZJFHgpYNY) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/Moderator/) |
+| [ModSentry](https://github.com/landoria-gaming/Landoria.ModSentry) | Checks that client mod files and versions match the server's requirements. | — | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/ModSentry/) |
+| [SealedTombstone](https://github.com/landoria-gaming/Landoria.SealedTombstone) | Protects recent tombstones and lets owners approve access for other players. | [YouTube](https://youtu.be/WzRf7-7_DGg) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/SealedTombstone/) |
+| [Socialize](https://github.com/landoria-gaming/Landoria.Socialize) | Adds session groups, private messages, group chat, and shared map positions and pings. | — | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/Socialize/) |
+
+## Valheim Docker image
+
+The [Valheim Docker image](https://github.com/landoria-gaming/valheim-server-image) includes the dedicated server and BepInExPack_Valheim. Updates are checked daily, and the image is rebuilt when a new version of Valheim or BepInExPack_Valheim is available.
+
+This means the image normally contains the latest Valheim dedicated server version, once the daily update check and build have completed.
+
+## Get in touch
+
+Have a question, an idea, or feedback about the mods or Docker image? Leave a message in [Landoria's discussions](https://github.com/orgs/landoria-gaming/discussions). You can also share your creations and tell us how you use these projects!
+
+Found a bug? Please open an issue in the affected project's repository and describe what happened and how to reproduce it.
