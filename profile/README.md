@@ -33,7 +33,7 @@ First, you'll find mods to customize your Valheim experience. Explore their repo
 
 ## Valheim Docker image
 
-The [Valheim Docker image](https://github.com/landoria-gaming/valheim-server-image) includes the dedicated server and BepInExPack_Valheim. Updates are checked daily, and the image is rebuilt when a new version of Valheim or BepInExPack_Valheim is available.
+The [Valheim Docker image](https://github.com/landoria-gaming/valheim-server-image/pkgs/container/valheim_server.x86_64) includes the dedicated server and BepInExPack_Valheim. Updates are checked daily, and the image is rebuilt when a new version of Valheim or BepInExPack_Valheim is available.
 
 This means the image normally contains the latest Valheim dedicated server version, once the daily update check and build have completed.
 
