@@ -112,7 +112,7 @@ These measurements used an NVIDIA GeForce RTX 5060, H.264, 4K at 60 FPS, VSync, 
 | VSync | Enabled | Enabled | Enabled | - |
 | Anti-aliasing | MSAA 4x | MSAA 4x | MSAA 4x | - |
 | Video codec | H.264 | H.264 | H.264 | - |
-| NVENC preset | P5 | P4 | P4 | P5 improves compression efficiency and visual quality for a single video; P4 reduces GPU cost. |
+| NVENC preset | P5 | P4 | P4 | P5 improves compression efficiency and visual quality; P4 reduces GPU cost. |
 | CQP | 16 | 27 | 16 | Low applies stronger video compression. High preserves more fine detail and produces fewer artifacts in grass, mist, particles, and fast motion. |
 | AAC audio bitrate | 192 kbps | 128 kbps | 192 kbps | Low applies stronger audio compression. High can sound cleaner, especially for music and complex audio; Low may introduce mild compression artifacts. |
 | Spatial AQ | Enabled | Enabled | Enabled | - |
