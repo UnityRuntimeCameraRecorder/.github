@@ -72,16 +72,29 @@ flowchart TB
 
 # UnitySample Videos
 
-These videos were recorded with the [UnitySample](https://github.com/UnityRuntimeCameraRecorder/UnitySample) application. For each run, both cameras were selected and the **Record** button was clicked, recording them simultaneously into separate video files.
+These videos were recorded with the [UnitySample](https://github.com/UnityRuntimeCameraRecorder/UnitySample) application. Each selected camera was saved as a separate video after the **Record** button was clicked.
 
-## First Run: 2 Cameras Recording in High Preset
+## First Run: 1 Camera Recording in High Preset
+
+One camera was recorded with the High preset.
+
+<p align="left">
+  <a href="https://youtu.be/a_ZqTVeO7gk"><img src="assets/high-static-play.png" alt="High preset Camera2 recording" width="49%"></a><br>
+  <strong>Camera2</strong>
+</p>
+
+## Second Run: 2 Cameras Recording in High Preset
+
+Screen Camera and Camera1 were recorded simultaneously with the High preset.
 
 |  |  |
 | :---: | :---: |
 | [![High preset Screen Camera recording](assets/high-screen-play.png)](https://youtu.be/JwnZKzePm60) | [![High preset Camera1 recording](assets/high-main-play.png)](https://youtu.be/MXEklBuCnCU) |
 | **Screen Camera** | **Camera1** |
 
-## Second Run: 2 Cameras Recording in Low Preset
+## Third Run: 2 Cameras Recording in Low Preset
+
+Screen Camera and Camera1 were recorded simultaneously with the Low preset.
 
 |  |  |
 | :---: | :---: |
@@ -90,31 +103,31 @@ These videos were recorded with the [UnitySample](https://github.com/UnityRuntim
 
 # 4K Performance Comparison
 
-These measurements used an NVIDIA GeForce RTX 5060, H.264, NVENC P4, 4K at 60 FPS, MSAA 4x, and simultaneous Camera 1 and Screen recording. Video FPS was measured from second 1 through second 6.
+These measurements used an NVIDIA GeForce RTX 5060, H.264, 4K at 60 FPS, VSync, and MSAA 4x. The two-camera runs recorded Camera 1 and Screen simultaneously; the single-camera run recorded Camera 2. Video FPS was measured from second 1 through second 6.
 
-| Metric | Low | High | Expected impact |
-| --- | ---: | ---: | --- |
-| Resolution | 3840 x 2160 | 3840 x 2160 | - |
-| Target frame rate | 60 FPS | 60 FPS | - |
-| VSync | Enabled | Enabled | - |
-| Anti-aliasing | MSAA 4x | MSAA 4x | - |
-| Video codec | H.264 | H.264 | - |
-| NVENC preset | P4 | P4 | - |
-| CQP | 27 | 16 | Low applies stronger video compression. High preserves more fine detail and produces fewer artifacts in grass, mist, particles, and fast motion. |
-| AAC audio bitrate | 128 kbps | 192 kbps | Low applies stronger audio compression. High can sound cleaner, especially for music and complex audio; Low may introduce mild compression artifacts. |
-| Spatial AQ | Enabled | Enabled | - |
-| Temporal AQ | Disabled | Disabled | - |
-| Lookahead | Disabled | Disabled | - |
-| B-frames | 2 | 2 | - |
-| Capture duration | 4 min 2 s | 4 min 3 s | - |
-| Unity render FPS | 60 | 60 | - |
-| Camera 1 video FPS | 60 | 60 | - |
-| Screen video FPS | 60 | 60 | - |
-| Dropped frames | 1 / 14,541 | 2 / 14,574 | Negligible in both profiles |
-| Camera 1 file size | 1.52 GB | 5.10 GB | High / Low size ratio: 3.4x. |
-| Screen file size | 1.12 GB | 3.69 GB | High / Low size ratio: 3.3x. |
+| <div align="center">Metric</div> | <div align="center">High (1&nbsp;camera)</div> | <div align="center">Low (2&nbsp;cameras)</div> | <div align="center">High (2&nbsp;cameras)</div> | <div align="center">Expected impact</div> |
+| --- | ---: | ---: | ---: | --- |
+| Resolution | 3840 x 2160 | 3840 x 2160 | 3840 x 2160 | - |
+| Target frame rate | 60 FPS | 60 FPS | 60 FPS | - |
+| VSync | Enabled | Enabled | Enabled | - |
+| Anti-aliasing | MSAA 4x | MSAA 4x | MSAA 4x | - |
+| Video codec | H.264 | H.264 | H.264 | - |
+| NVENC preset | P5 | P4 | P4 | P5 improves compression efficiency and visual quality for a single video; P4 reduces GPU cost. |
+| CQP | 16 | 27 | 16 | Low applies stronger video compression. High preserves more fine detail and produces fewer artifacts in grass, mist, particles, and fast motion. |
+| AAC audio bitrate | 192 kbps | 128 kbps | 192 kbps | Low applies stronger audio compression. High can sound cleaner, especially for music and complex audio; Low may introduce mild compression artifacts. |
+| Spatial AQ | Enabled | Enabled | Enabled | - |
+| Temporal AQ | Enabled | Disabled | Disabled | Disabled automatically for multiple videos to reduce GPU cost. |
+| Lookahead | Enabled | Disabled | Disabled | Disabled automatically for multiple videos to reduce GPU cost. |
+| B-frames | 2 | 2 | 2 | - |
+| Capture duration | 4 min 2 s | 4 min 2 s | 4 min 3 s | - |
+| Unity render FPS | 60 | 60 | 60 | - |
+| Camera video FPS | 60 | 60 | 60 | - |
+| Screen video FPS | - | 60 | 60 | - |
+| Dropped frames | 0 / 14,502 | 1 / 14,541 | 2 / 14,574 | Negligible in all runs |
+| Camera file size | 3.62 GB | 1.52 GB | 5.10 GB | Two-camera High / Low size ratio: 3.4x. |
+| Screen file size | - | 1.12 GB | 3.69 GB | Two-camera High / Low size ratio: 3.3x. |
 
-Both profiles maintained essentially 60 FPS. Low reduced the combined output size by about 70% and completed finalization much faster.
+All configurations maintained essentially 60 FPS. Low reduced the combined two-camera output size by about 70%.
 
 # Contributing
 
