@@ -25,7 +25,7 @@ Give it one, two, or maybe three cameras, and it'll record their footage as effi
 
 | Repository | Purpose |
 | --- | --- |
-| [UnityMediaRecorder](https://github.com/UnityRuntimeCameraRecorder/UnityMediaRecorder) | Records Unity cameras and screen output with audio. |
+| [UnityRuntimeCameraRecorder](https://github.com/UnityRuntimeCameraRecorder/UnityRuntimeCameraRecorder) | Records Unity cameras and screen output with audio. |
 | [Direct3DVideoEncoder](https://github.com/UnityRuntimeCameraRecorder/Direct3DVideoEncoder) | Encodes Direct3D 11 textures using NVIDIA NVENC. |
 | [FFmpegMediaWriter](https://github.com/UnityRuntimeCameraRecorder/FFmpegMediaWriter) | Combines encoded video and raw audio into MP4 files. |
 | [UnitySample](https://github.com/UnityRuntimeCameraRecorder/UnitySample) | Demonstrates camera and screen recording in an editable Unity project. |
@@ -42,8 +42,8 @@ flowchart TB
         Audio["Unity audio mix"]
     end
 
-    Camera1 --> Recorder1["UnityMediaRecorder #1"]
-    Camera2 --> Recorder2["UnityMediaRecorder #2"]
+    Camera1 --> Recorder1["UnityRuntimeCameraRecorder #1"]
+    Camera2 --> Recorder2["UnityRuntimeCameraRecorder #2"]
 
     Audio --> Recorder1
     Audio --> Recorder2
