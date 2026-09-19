@@ -83,7 +83,7 @@ These videos were recorded with the [UnitySample](https://github.com/UnityRuntim
 One camera was recorded with the High preset.
 
 <p align="left">
-  <a href="https://youtu.be/a_ZqTVeO7gk"><img src="assets/high-static-play.png" alt="High preset Camera2 recording" width="49%"></a><br>
+  <a href="https://youtu.be/a_ZqTVeO7gk"><img src="assets/high-static-play.svg" alt="High preset Camera2 recording" width="49%"></a><br>
   <strong>Camera2</strong>
 </p>
 
@@ -93,7 +93,7 @@ Screen Camera and Camera1 were recorded simultaneously with the High preset.
 
 |  |  |
 | :---: | :---: |
-| [![High preset Screen Camera recording](assets/high-screen-play.png)](https://youtu.be/JwnZKzePm60) | [![High preset Camera1 recording](assets/high-main-play.png)](https://youtu.be/MXEklBuCnCU) |
+| [![High preset Screen Camera recording](assets/high-screen-play.svg)](https://youtu.be/JwnZKzePm60) | [![High preset Camera1 recording](assets/high-main-play.svg)](https://youtu.be/MXEklBuCnCU) |
 | **Screen Camera** | **Camera1** |
 
 ## Third Run: 2 Cameras Recording in Low Preset
@@ -102,7 +102,7 @@ Screen Camera and Camera1 were recorded simultaneously with the Low preset.
 
 |  |  |
 | :---: | :---: |
-| [![Low preset Screen Camera recording](assets/low-screen-play.png)](https://youtu.be/R6eQ3eTLNqA) | [![Low preset Camera1 recording](assets/low-main-play.png)](https://youtu.be/xpAkro-yhAg) |
+| [![Low preset Screen Camera recording](assets/low-screen-play.svg)](https://youtu.be/R6eQ3eTLNqA) | [![Low preset Camera1 recording](assets/low-main-play.svg)](https://youtu.be/xpAkro-yhAg) |
 | **Screen Camera** | **Camera1** |
 
 ## Fourth Run: 3 Inputs to 1 Output
@@ -110,7 +110,7 @@ Screen Camera and Camera1 were recorded simultaneously with the Low preset.
 Camera1, Camera2, and Screen Camera were recorded into one automatically edited video.
 
 <p align="left">
-  <a href="https://youtu.be/jIel-t4BxnA"><img src="assets/video-sequence-play.png" alt="Camera1, Camera2, and Screen Camera recorded into one output" width="49%"></a><br>
+  <a href="https://youtu.be/jIel-t4BxnA"><img src="assets/video-sequence-play.svg" alt="Camera1, Camera2, and Screen Camera recorded into one output" width="49%"></a><br>
   <strong>Camera1 + Camera2 + Screen Camera → 1 output</strong>
 </p>
 
