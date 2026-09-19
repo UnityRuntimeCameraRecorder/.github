@@ -91,19 +91,31 @@ One camera was recorded with the High preset.
 
 Screen Camera and Camera1 were recorded simultaneously with the High preset.
 
-|  |  |
-| :---: | :---: |
-| [![High preset Screen Camera recording](assets/high-screen-play.svg)](https://youtu.be/JwnZKzePm60) | [![High preset Camera1 recording](assets/high-main-play.svg)](https://youtu.be/MXEklBuCnCU) |
-| **Screen Camera** | **Camera1** |
+<table>
+  <tr>
+    <td width="50%" align="center"><a href="https://youtu.be/JwnZKzePm60"><img src="assets/high-screen-play.svg" alt="High preset Screen Camera recording" width="100%"></a></td>
+    <td width="50%" align="center"><a href="https://youtu.be/MXEklBuCnCU"><img src="assets/high-main-play.svg" alt="High preset Camera1 recording" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Screen Camera</strong></td>
+    <td align="center"><strong>Camera1</strong></td>
+  </tr>
+</table>
 
 ## Third Run: 2 Cameras Recording in Low Preset
 
 Screen Camera and Camera1 were recorded simultaneously with the Low preset.
 
-|  |  |
-| :---: | :---: |
-| [![Low preset Screen Camera recording](assets/low-screen-play.svg)](https://youtu.be/R6eQ3eTLNqA) | [![Low preset Camera1 recording](assets/low-main-play.svg)](https://youtu.be/xpAkro-yhAg) |
-| **Screen Camera** | **Camera1** |
+<table>
+  <tr>
+    <td width="50%" align="center"><a href="https://youtu.be/R6eQ3eTLNqA"><img src="assets/low-screen-play.svg" alt="Low preset Screen Camera recording" width="100%"></a></td>
+    <td width="50%" align="center"><a href="https://youtu.be/xpAkro-yhAg"><img src="assets/low-main-play.svg" alt="Low preset Camera1 recording" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Screen Camera</strong></td>
+    <td align="center"><strong>Camera1</strong></td>
+  </tr>
+</table>
 
 ## Fourth Run: 3 Inputs to 1 Output
 
