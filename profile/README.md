@@ -21,6 +21,55 @@ Give it one, two, or maybe three cameras, and it'll record their footage as effi
 | Linux | NVIDIA, AMD, or Intel | Vulkan | 🔭 On the wishlist |
 | macOS | Apple silicon | Metal | 🔭 On the wishlist |
 
+# Repositories
+
+| Repository | Purpose |
+| --- | --- |
+| [UnityMediaRecorder](https://github.com/UnityRuntimeCameraRecorder/UnityMediaRecorder) | Records Unity cameras and screen output with audio. |
+| [Direct3DVideoEncoder](https://github.com/UnityRuntimeCameraRecorder/Direct3DVideoEncoder) | Encodes Direct3D 11 textures using NVIDIA NVENC. |
+| [FFmpegMediaWriter](https://github.com/UnityRuntimeCameraRecorder/FFmpegMediaWriter) | Combines encoded video and raw audio into MP4 files. |
+| [UnitySample](https://github.com/UnityRuntimeCameraRecorder/UnitySample) | Demonstrates camera and screen recording in an editable Unity project. |
+
+# UnitySample Architecture
+
+```mermaid
+flowchart TB
+
+    subgraph Sample["UnitySample — 2 cameras recording example"]
+        direction LR
+        Camera1["Camera 1<br/>Scene view"]
+        Camera2["Camera 2<br/>Alternate view"]
+        Audio["Unity audio mix"]
+    end
+
+    Camera1 --> Recorder1["UnityMediaRecorder #1"]
+    Camera2 --> Recorder2["UnityMediaRecorder #2"]
+
+    Audio --> Recorder1
+    Audio --> Recorder2
+
+    Recorder1 --> Encoder1["Direct3DVideoEncoder"]
+    Recorder2 --> Encoder2["Direct3DVideoEncoder"]
+
+    Encoder1 --> Writer1["FFmpegMediaWriter"]
+    Encoder2 --> Writer2["FFmpegMediaWriter"]
+
+    Recorder1 -->|"PCM audio"| Writer1
+    Recorder2 -->|"PCM audio"| Writer2
+
+    Writer1 --> Output1["Camera 1.mp4"]
+    Writer2 --> Output2["Camera 2.mp4"]
+
+    classDef camera fill:#593d88,color:#fff,stroke:#b99ae8,stroke-width:2px;
+    classDef library fill:#176b87,color:#fff,stroke:#64ccc5,stroke-width:2px;
+    classDef audio fill:#2d4356,color:#fff,stroke:#a7c4bc,stroke-width:2px;
+    classDef output fill:#1f8a70,color:#fff,stroke:#9de8d7,stroke-width:2px;
+    class Camera1,Camera2 camera;
+    class Recorder1,Recorder2,Encoder1,Encoder2,Writer1,Writer2 library;
+    class Audio audio;
+    class Output1,Output2 output;
+```
+
 # Contributing
 
 Want to help move things off the wishlist? Contributions are more than welcome!
