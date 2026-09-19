@@ -34,46 +34,6 @@ Give it one, two, or maybe three cameras, and it'll record their footage as effi
 
 Follow the [UnityRuntimeCameraRecorder Getting Started guide](https://github.com/UnityRuntimeCameraRecorder/UnityRuntimeCameraRecorder/blob/main/DEVELOPER_GUIDE.md) to integrate cameras, screen capture, textures, multi-source sequences, transitions, statistics and PNG capture step by step.
 
-# UnitySample Architecture
-
-```mermaid
-flowchart TB
-
-    subgraph Sample["UnitySample — 2 cameras recording example"]
-        direction LR
-        Camera1["Camera 1<br/>Scene view"]
-        Camera2["Camera 2<br/>Alternate view"]
-        Audio["Unity audio mix"]
-    end
-
-    Camera1 --> Recorder1["UnityRuntimeCameraRecorder #1"]
-    Camera2 --> Recorder2["UnityRuntimeCameraRecorder #2"]
-
-    Audio --> Recorder1
-    Audio --> Recorder2
-
-    Recorder1 --> Encoder1["Direct3DVideoEncoder"]
-    Recorder2 --> Encoder2["Direct3DVideoEncoder"]
-
-    Encoder1 --> Writer1["FFmpegMediaWriter"]
-    Encoder2 --> Writer2["FFmpegMediaWriter"]
-
-    Recorder1 -->|"PCM audio"| Writer1
-    Recorder2 -->|"PCM audio"| Writer2
-
-    Writer1 --> Output1["Camera 1.mp4"]
-    Writer2 --> Output2["Camera 2.mp4"]
-
-    classDef camera fill:#593d88,color:#fff,stroke:#b99ae8,stroke-width:2px;
-    classDef library fill:#176b87,color:#fff,stroke:#64ccc5,stroke-width:2px;
-    classDef audio fill:#2d4356,color:#fff,stroke:#a7c4bc,stroke-width:2px;
-    classDef output fill:#1f8a70,color:#fff,stroke:#9de8d7,stroke-width:2px;
-    class Camera1,Camera2 camera;
-    class Recorder1,Recorder2,Encoder1,Encoder2,Writer1,Writer2 library;
-    class Audio audio;
-    class Output1,Output2 output;
-```
-
 # UnitySample Videos
 
 These videos were recorded with the [UnitySample](https://github.com/UnityRuntimeCameraRecorder/UnitySample) application. The first three runs saved each selected camera as a separate video. The fourth run combined three selected sources into one video.
@@ -153,6 +113,46 @@ These measurements used an NVIDIA GeForce RTX 5060, H.264, 4K at 60 FPS, VSync, 
 | Screen file size | - | 1.12 GB | 3.69 GB | - | Two-camera High / Low size ratio: 3.3x. |
 
 All configurations maintained essentially 60 FPS. Low reduced the combined two-camera output size by about 70%.
+
+# UnitySample Architecture
+
+```mermaid
+flowchart TB
+
+    subgraph Sample["UnitySample — 2 cameras recording example"]
+        direction LR
+        Camera1["Camera 1<br/>Scene view"]
+        Camera2["Camera 2<br/>Alternate view"]
+        Audio["Unity audio mix"]
+    end
+
+    Camera1 --> Recorder1["UnityRuntimeCameraRecorder #1"]
+    Camera2 --> Recorder2["UnityRuntimeCameraRecorder #2"]
+
+    Audio --> Recorder1
+    Audio --> Recorder2
+
+    Recorder1 --> Encoder1["Direct3DVideoEncoder"]
+    Recorder2 --> Encoder2["Direct3DVideoEncoder"]
+
+    Encoder1 --> Writer1["FFmpegMediaWriter"]
+    Encoder2 --> Writer2["FFmpegMediaWriter"]
+
+    Recorder1 -->|"PCM audio"| Writer1
+    Recorder2 -->|"PCM audio"| Writer2
+
+    Writer1 --> Output1["Camera 1.mp4"]
+    Writer2 --> Output2["Camera 2.mp4"]
+
+    classDef camera fill:#593d88,color:#fff,stroke:#b99ae8,stroke-width:2px;
+    classDef library fill:#176b87,color:#fff,stroke:#64ccc5,stroke-width:2px;
+    classDef audio fill:#2d4356,color:#fff,stroke:#a7c4bc,stroke-width:2px;
+    classDef output fill:#1f8a70,color:#fff,stroke:#9de8d7,stroke-width:2px;
+    class Camera1,Camera2 camera;
+    class Recorder1,Recorder2,Encoder1,Encoder2,Writer1,Writer2 library;
+    class Audio audio;
+    class Output1,Output2 output;
+```
 
 # Contributing
 
