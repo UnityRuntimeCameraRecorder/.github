@@ -1,56 +1,30 @@
-# Welcome
+# Runtime Camera Recorder for Unity
 
-Here, you'll find plenty of cool things for the amazing game [Valheim](https://www.valheimgame.com/).
+So, what's it all about?
 
-Visit the [Valheim Landoria Gaming YouTube channel](https://www.youtube.com/@ValheimLandoriaGaming/videos) for mod demos and Valheim videos.
+Picture this: you're playing your favorite game and think, “Hey, it'd be pretty cool to record my finest moments—but without the UI getting in the way.”
 
-Browse [Landoria's mods on Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/).
+And while we're at it, why settle for one video? Why not record several at once, each from a different point of view?
 
-## Mods
+That’s the whole idea behind **Runtime Camera Recorder for Unity**.
 
-First, you'll find mods to customize your Valheim experience. Explore their repositories below:
+Give it one, two, or maybe three cameras, and it'll record their footage as efficiently as possible—without slowing down the runtime—the game.
 
-### Client-only mods
+# Current Support
 
-| Mod | Description | Demo | Thunderstore |
+| OS | GPU | Graphics API | Status |
 | --- | --- | --- | --- |
-| [FirstPerson](https://github.com/landoria-gaming/Landoria.FirstPerson) | Adds a smooth first-person view with an adjustable field of view. | [YouTube](https://youtu.be/eExAEyoNsSs) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/FirstPerson/) |
-| [FreeFly](https://github.com/landoria-gaming/Landoria.FreeFly) | Adds a free camera for exploring, taking screenshots, and filming without admin permissions. | [YouTube](https://youtu.be/smoOkcAPKr0) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/FreeFly/) |
-| [GentleDeath](https://github.com/landoria-gaming/Landoria.GentleDeath) | Keeps equipable items after death and moves other items to your tombstone. | [YouTube](https://youtu.be/O61d6w3ZpVs) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/GentleDeath/) |
-| [QuickLaunch](https://github.com/landoria-gaming/Landoria.QuickLaunch) | Automatically resumes your last local world or multiplayer session. | [YouTube](https://youtu.be/K0r75KNOGc0) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/QuickLaunch/) |
-| [HuginnCam](https://github.com/landoria-gaming/Landoria.HuginnCam) | **Under development.** Records gameplay from an independent cinematic camera. | — | — |
+| Windows x64 | NVIDIA GPU with NVENC | Direct3D 11 | ✅ Supported |
+| Windows x64 | AMD | Direct3D 11 | 🔭 On the wishlist |
+| Windows x64 | Intel | Direct3D 11 | 🔭 On the wishlist |
+| Windows x64 | NVIDIA GPU with NVENC | Direct3D 12 | 🔭 On the wishlist |
+| Linux | NVIDIA, AMD, or Intel | Vulkan | 🔭 On the wishlist |
+| macOS | Apple silicon | Metal | 🔭 On the wishlist |
 
-### Client and server mods
+# Contributing
 
-| Mod | Description | Demo | Thunderstore |
-| --- | --- | --- | --- |
-| [CharacterVault](https://github.com/landoria-gaming/Landoria.CharacterVault) | Stores trusted character saves on the server to prevent item imports and duplication. | [YouTube](https://youtu.be/x2C1DdU_78c) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/CharacterVault/) |
-| [HammerFreedom](https://github.com/landoria-gaming/Landoria.HammerFreedom) | Adds server-authorized flight, unlimited stamina, fall protection, and lasting equipment in Hammer worlds. | [YouTube](https://youtu.be/wUBgHzN5hG8) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/HammerFreedom/) |
-| [Moderator](https://github.com/landoria-gaming/Landoria.Moderator) | Gives trusted moderators server-authorized tools to help players and manage the world. | [YouTube](https://youtu.be/GxZJFHgpYNY) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/Moderator/) |
-| [ModSentry](https://github.com/landoria-gaming/Landoria.ModSentry) | Checks that client mod files and versions match the server's requirements. | — | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/ModSentry/) |
-| [SealedTombstone](https://github.com/landoria-gaming/Landoria.SealedTombstone) | Protects recent tombstones and lets owners approve access for other players. | [YouTube](https://youtu.be/WzRf7-7_DGg) | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/SealedTombstone/) |
-| [Socialize](https://github.com/landoria-gaming/Landoria.Socialize) | Adds session groups, private messages, group chat, and shared map positions and pings. | — | [Thunderstore](https://thunderstore.io/c/valheim/p/Landoria/Socialize/) |
+Want to help move things off the wishlist? Contributions are more than welcome!
 
-## Valheim Docker image
+You can help by testing the recorder on your OS and GPU, then sharing your setup and performance results. Please include your OS, GPU model, Unity version, graphics API, and anything that worked—or didn't.
 
-The [Valheim Docker image](https://github.com/landoria-gaming/valheim-server-image/pkgs/container/valheim_server.x86_64) includes the dedicated server and BepInExPack_Valheim. Updates are checked daily, and the image is rebuilt when a new version of Valheim or BepInExPack_Valheim is available.
-
-This means the image normally contains the latest Valheim dedicated server version, once the daily update check and build have completed.
-
-## Harmony Validator
-
-When patching a public method, you can use C#'s `nameof` to let the compiler check its name. Private methods sometimes need to be targeted by a string, which the compiler cannot check.
-
-[Harmony Validator](https://github.com/landoria-gaming/HarmonyValidator) verifies during the build that the targeted method really exists and that the patch parameters match. This makes mods more robust by catching missing methods or incompatible parameter changes at compile time.
-
-Harmony Validator is available on [NuGet](https://www.nuget.org/packages/HarmonyValidator), so you can add it directly to your mod project as a NuGet package. All Landoria mods use this validator.
-
-## More projects
-
-Explore [Unity Runtime Camera Recorder's repositories](https://github.com/UnityRuntimeCameraRecorder) for more projects beyond Valheim.
-
-## Get in touch
-
-Have a question, an idea, or feedback about these projects? Leave a message in [Landoria's discussions](https://github.com/orgs/landoria-gaming/discussions). You can also share your creations and tell us how you use these projects!
-
-Found a bug? Please open an issue in the affected project's repository and describe what happened and how to reproduce it.
+Feeling like writing some code? You can also help build support for the platforms, GPUs, and graphics APIs that aren't supported yet. Pick something from the wishlist, open an issue to discuss your approach, and let's make it happen.
