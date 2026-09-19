@@ -70,6 +70,24 @@ flowchart TB
     class Output1,Output2 output;
 ```
 
+# UnitySample Videos
+
+These videos were recorded with the [UnitySample](https://github.com/UnityRuntimeCameraRecorder/UnitySample) application. For each run, both cameras were selected and the **Record** button was clicked, recording them simultaneously into separate video files.
+
+## First Run: 2 Cameras Recording in High Preset
+
+|  |  |
+| :---: | :---: |
+| [![High preset Screen Camera recording](assets/high-screen-play.png)](https://youtu.be/JwnZKzePm60) | [![High preset Camera1 recording](assets/high-main-play.png)](https://youtu.be/MXEklBuCnCU) |
+| **Screen Camera** | **Camera1** |
+
+## Second Run: 2 Cameras Recording in Low Preset
+
+|  |  |
+| :---: | :---: |
+| [![Low preset Screen Camera recording](assets/low-screen-play.png)](https://youtu.be/R6eQ3eTLNqA) | [![Low preset Camera1 recording](assets/low-main-play.png)](https://youtu.be/xpAkro-yhAg) |
+| **Screen Camera** | **Camera1** |
+
 # 4K Performance Comparison
 
 These measurements used an NVIDIA GeForce RTX 5060, H.264, NVENC P4, 4K at 60 FPS, MSAA 4x, and simultaneous Camera 1 and Screen recording. Video FPS was measured from second 1 through second 6.
