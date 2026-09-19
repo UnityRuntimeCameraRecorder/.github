@@ -47,7 +47,7 @@ Harmony Validator is available on [NuGet](https://www.nuget.org/packages/Harmony
 
 ## More projects
 
-Explore [End3rByte's repositories](https://github.com/end3rbyte?tab=repositories) for more projects beyond Valheim.
+Explore [Unity Runtime Camera Recorder's repositories](https://github.com/UnityRuntimeCameraRecorder) for more projects beyond Valheim.
 
 ## Get in touch
 
