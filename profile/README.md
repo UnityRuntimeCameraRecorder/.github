@@ -32,7 +32,7 @@ Give it one, two, or maybe three cameras, and it'll record their footage as effi
 
 # Getting Started
 
-Follow the [UnityRuntimeCameraRecorder Getting Started guide](https://github.com/UnityRuntimeCameraRecorder/UnityRuntimeCameraRecorder/blob/main/DEVELOPER_GUIDE.md) to integrate cameras, screen capture, textures, multi-source sequences, transitions, statistics and PNG capture step by step.
+Follow the [UnityRuntimeCameraRecorder Getting Started guide](https://github.com/UnityRuntimeCameraRecorder/UnityRuntimeCameraRecorder/blob/main/DEVELOPER_GUIDE.md) to integrate cameras, screen capture, textures, multi-source sequences, transitions, statistics and image-sequence capture step by step.
 
 # UnitySample Videos
 
