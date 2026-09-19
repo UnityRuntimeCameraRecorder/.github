@@ -30,6 +30,10 @@ Give it one, two, or maybe three cameras, and it'll record their footage as effi
 | [FFmpegMediaWriter](https://github.com/UnityRuntimeCameraRecorder/FFmpegMediaWriter) | Combines encoded video and raw audio into MP4 files. |
 | [UnitySample](https://github.com/UnityRuntimeCameraRecorder/UnitySample) | Demonstrates camera and screen recording in an editable Unity project. |
 
+# Getting Started
+
+Follow the [UnityRuntimeCameraRecorder Getting Started guide](https://github.com/UnityRuntimeCameraRecorder/UnityRuntimeCameraRecorder/blob/main/DEVELOPER_GUIDE.md) to integrate cameras, screen capture, textures, multi-source sequences, transitions, statistics and PNG capture step by step.
+
 # UnitySample Architecture
 
 ```mermaid
