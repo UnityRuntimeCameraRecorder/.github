@@ -1,14 +1,13 @@
-# Runtime Camera Recorder for Unity
+# CineCapture
 
-So, what's it all about?
+CineCapture builds open-source tools for recording and directing cinematic
+video inside Unity applications at runtime.
 
-Picture this: you're playing your favorite game and think, “Hey, it'd be pretty cool to record my finest moments—but without the UI getting in the way.”
+The projects cover the complete capture pipeline: camera control, Unity frame
+capture, GPU video encoding, audio/video muxing, and sample integrations.
 
-And while we're at it, why settle for one video? Why not record several at once, each from a different point of view?
-
-That’s the whole idea behind **Runtime Camera Recorder for Unity**.
-
-Give it one, two, or maybe three cameras, and it'll record their footage as efficiently as possible—without slowing down the runtime—the game.
+Use one camera, record several cameras independently, or combine multiple
+sources into one automatically edited video.
 
 # Current Support
 
@@ -25,18 +24,19 @@ Give it one, two, or maybe three cameras, and it'll record their footage as effi
 
 | Repository | Purpose |
 | --- | --- |
-| [UnityRuntimeCameraRecorder](https://github.com/UnityRuntimeCameraRecorder/UnityRuntimeCameraRecorder) | Records Unity cameras and screen output with audio. |
-| [Direct3DVideoEncoder](https://github.com/UnityRuntimeCameraRecorder/Direct3DVideoEncoder) | Encodes Direct3D 11 textures using NVIDIA NVENC. |
-| [FFmpegMediaWriter](https://github.com/UnityRuntimeCameraRecorder/FFmpegMediaWriter) | Combines encoded video and raw audio into MP4 files. |
-| [UnitySample](https://github.com/UnityRuntimeCameraRecorder/UnitySample) | Demonstrates camera and screen recording in an editable Unity project. |
+| [UnityRuntimeCameraRecorder](https://github.com/CineCapture/UnityRuntimeCameraRecorder) | Records Unity cameras and screen output with audio. |
+| [Direct3DVideoEncoder](https://github.com/CineCapture/Direct3DVideoEncoder) | Encodes Direct3D 11 textures using NVIDIA NVENC. |
+| [FFmpegMediaWriter](https://github.com/CineCapture/FFmpegMediaWriter) | Combines encoded video and raw audio into MP4 files. |
+| [CameraOperator](https://github.com/CineCapture/CameraOperator) | Moves a Unity camera smoothly around a target while maintaining framing. |
+| [UnitySample](https://github.com/CineCapture/UnitySample) | Demonstrates camera and screen recording in an editable Unity project. |
 
 # Getting Started
 
-Follow the [UnityRuntimeCameraRecorder Getting Started guide](https://github.com/UnityRuntimeCameraRecorder/UnityRuntimeCameraRecorder/blob/main/DEVELOPER_GUIDE.md) to integrate cameras, screen capture, textures, multi-source sequences, transitions, statistics and image-sequence capture step by step.
+Follow the [UnityRuntimeCameraRecorder Getting Started guide](https://github.com/CineCapture/UnityRuntimeCameraRecorder/blob/main/DEVELOPER_GUIDE.md) to integrate cameras, screen capture, textures, multi-source sequences, transitions, statistics and image-sequence capture step by step.
 
 # UnitySample Videos
 
-These videos were recorded with the [UnitySample](https://github.com/UnityRuntimeCameraRecorder/UnitySample) application. The first three runs saved each selected camera as a separate video. The fourth run combined three selected sources into one video.
+These videos were recorded with the [UnitySample](https://github.com/CineCapture/UnitySample) application. The first three runs saved each selected camera as a separate video. The fourth run combined three selected sources into one video.
 
 ## First Run: 1 Camera Recording in High Preset
 
