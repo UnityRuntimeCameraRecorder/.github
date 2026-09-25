@@ -24,19 +24,19 @@ sources into one automatically edited video.
 
 | Repository | Purpose |
 | --- | --- |
-| [UnityRuntimeCameraRecorder](https://github.com/CineCapture/UnityRuntimeCameraRecorder) | Records Unity cameras and screen output with audio. |
-| [Direct3DVideoEncoder](https://github.com/CineCapture/Direct3DVideoEncoder) | Encodes Direct3D 11 textures using NVIDIA NVENC. |
-| [FFmpegMediaWriter](https://github.com/CineCapture/FFmpegMediaWriter) | Combines encoded video and raw audio into MP4 files. |
-| [CameraOperator](https://github.com/CineCapture/CameraOperator) | Moves a Unity camera smoothly around a target while maintaining framing. |
-| [UnitySample](https://github.com/CineCapture/UnitySample) | Demonstrates camera and screen recording in an editable Unity project. |
+| [UnityRuntimeCameraRecorder](https://github.com/cine-capture/UnityRuntimeCameraRecorder) | Records Unity cameras and screen output with audio. |
+| [Direct3DVideoEncoder](https://github.com/cine-capture/Direct3DVideoEncoder) | Encodes Direct3D 11 textures using NVIDIA NVENC. |
+| [FFmpegMediaWriter](https://github.com/cine-capture/FFmpegMediaWriter) | Combines encoded video and raw audio into MP4 files. |
+| [CameraOperator](https://github.com/cine-capture/CameraOperator) | Moves a Unity camera smoothly around a target while maintaining framing. |
+| [UnitySample](https://github.com/cine-capture/UnitySample) | Demonstrates camera and screen recording in an editable Unity project. |
 
 # Getting Started
 
-Follow the [UnityRuntimeCameraRecorder Getting Started guide](https://github.com/CineCapture/UnityRuntimeCameraRecorder/blob/main/DEVELOPER_GUIDE.md) to integrate cameras, screen capture, textures, multi-source sequences, transitions, statistics and image-sequence capture step by step.
+Follow the [UnityRuntimeCameraRecorder Getting Started guide](https://github.com/cine-capture/UnityRuntimeCameraRecorder/blob/main/DEVELOPER_GUIDE.md) to integrate cameras, screen capture, textures, multi-source sequences, transitions, statistics and image-sequence capture step by step.
 
 # UnitySample Videos
 
-These videos were recorded with the [UnitySample](https://github.com/CineCapture/UnitySample) application. The first three runs saved each selected camera as a separate video. The fourth run combined three selected sources into one video.
+These videos were recorded with the [UnitySample](https://github.com/cine-capture/UnitySample) application. The first three runs saved each selected camera as a separate video. The fourth run combined three selected sources into one video.
 
 ## First Run: 1 Camera Recording in High Preset
 
